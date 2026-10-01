@@ -8,7 +8,9 @@ namespace WinFormsApp1
             ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
             //Application.Run(new InputUsingTextbox());
-            Application.Run(new StudentResult());
+            //Application.Run(new StudentResult());
+            Application.Run(new LoginCheck());
+
         }
     }
 }

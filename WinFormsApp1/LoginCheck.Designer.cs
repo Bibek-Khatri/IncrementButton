@@ -28,12 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "LoginCheck";
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            Login = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(278, 79);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Username";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(278, 117);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 20);
+            label2.TabIndex = 1;
+            label2.Text = "Password";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(389, 227);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 20);
+            label3.TabIndex = 2;
+            label3.Text = "label3";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(356, 78);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(175, 27);
+            textBox1.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(356, 117);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(175, 27);
+            textBox2.TabIndex = 4;
+            // 
+            // Login
+            // 
+            Login.Location = new Point(372, 167);
+            Login.Name = "Login";
+            Login.Size = new Size(94, 29);
+            Login.TabIndex = 5;
+            Login.Text = "Login";
+            Login.UseVisualStyleBackColor = true;
+            Login.Click += Login_Click;
+            // 
+            // LoginCheck
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Login);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Name = "LoginCheck";
+            Text = "LoginCheck";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Button Login;
     }
 }
