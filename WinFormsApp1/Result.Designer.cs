@@ -38,6 +38,7 @@
             textBox3 = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // Math
@@ -70,7 +71,7 @@
             // Total
             // 
             Total.AutoSize = true;
-            Total.Location = new Point(212, 304);
+            Total.Location = new Point(212, 315);
             Total.Name = "Total";
             Total.Size = new Size(49, 20);
             Total.TabIndex = 3;
@@ -94,14 +95,14 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(288, 180);
+            textBox2.Location = new Point(288, 177);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(140, 27);
             textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(293, 235);
+            textBox3.Location = new Point(293, 232);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(140, 27);
             textBox3.TabIndex = 7;
@@ -109,7 +110,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(276, 304);
+            label1.Location = new Point(274, 315);
             label1.Name = "label1";
             label1.Size = new Size(50, 20);
             label1.TabIndex = 8;
@@ -124,11 +125,22 @@
             label2.TabIndex = 9;
             label2.Text = "label2";
             // 
+            // button1
+            // 
+            button1.Location = new Point(303, 265);
+            button1.Name = "button1";
+            button1.Size = new Size(108, 36);
+            button1.TabIndex = 10;
+            button1.Text = "Calculate";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // StudentResult
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBox3);
@@ -157,5 +169,6 @@
         private TextBox textBox3;
         private Label label1;
         private Label label2;
+        private Button button1;
     }
 }
