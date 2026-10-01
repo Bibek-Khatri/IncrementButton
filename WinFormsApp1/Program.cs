@@ -10,7 +10,8 @@ namespace WinFormsApp1
             //Application.Run(new InputUsingTextbox());
             //Application.Run(new StudentResult());
             //Application.Run(new LoginCheck());
-            Application.Run(new Electricitybill());
+            //Application.Run(new Electricitybill());
+            Application.Run(new NumberGuessing());
 
         }
     }

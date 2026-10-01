@@ -14,5 +14,25 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void Guess_Click(object sender, EventArgs e)
+        {
+            int secretNumber = 41;
+
+            int userGuess = int.Parse(textBox1.Text);
+
+            if (userGuess == secretNumber)
+            {
+                label3.Text = "Correct Guess!";
+            }
+            else if (userGuess > secretNumber)
+            {
+                label3.Text = "Try a smaller number.";
+            }
+            else
+            {
+                label3.Text = "Try a larger number.";
+            }
+        }
     }
 }
