@@ -14,5 +14,32 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void Calculate_Click(object sender, EventArgs e)
+        {
+
+            
+            int units = int.Parse(textBox1.Text);
+            int billAmount = 0;
+
+            
+            if (units <= 100)
+            {
+                billAmount = units * 5;
+            }
+            else if (units <= 200)
+            {
+                billAmount = units * 7;
+            }
+            else
+            {
+                billAmount = units * 10;
+            }
+
+           
+            label3.Text = "" + billAmount;
+        }
+
+
     }
 }
